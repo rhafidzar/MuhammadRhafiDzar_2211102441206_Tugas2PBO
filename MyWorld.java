@@ -21,6 +21,9 @@ public class MyWorld extends World
         bird player1 = new bird();
         this.addObject(player1, 200,200);
         
+        fish player2 = new fish();
+        this.addObject(player2, 250,250);
+        
         cloud object1 = new cloud();
         this.addObject(object1, 600,100);
         

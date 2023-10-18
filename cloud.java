@@ -23,15 +23,15 @@ public class cloud extends Actor
 
     public void act() {
         if (isVisible) {
-            setLocation(getX() - speed, getY()); // Gerak ke kiri
+            setLocation(getX() - speed, getY());
 
-            // Deteksi sentuhan ujung kiri
+            
             if (getX() <= 0) {
-                isVisible = false; // Aktor akan menghilang
+                isVisible = false;
             }
         } else {
             setLocation(getWorld().getWidth(), Greenfoot.getRandomNumber(getWorld().getHeight())); // Munculkan kembali di ujung kanan
-            isVisible = true; // Aktor akan muncul kembali
+            isVisible = true;
         }
     }
 }
